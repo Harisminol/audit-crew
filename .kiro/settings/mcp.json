@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/home/hatch/workspace/kiroween/audit-crew"
+      ],
+      "env": {}
+    },
+    "shell": {
+      "command": "node",
+      "args": [
+        "/home/hatch/workspace/kiroween/audit-crew/crew/mcp-shell/server.mjs"
+      ],
+      "env": {
+        "PATH": "/home/hatch/.foundry/bin:/home/hatch/.local/bin:/usr/local/bin:/usr/bin:/bin",
+        "AUDIT_CREW_ROOT": "/home/hatch/workspace/kiroween/audit-crew"
+      }
+    }
+  }
+}
