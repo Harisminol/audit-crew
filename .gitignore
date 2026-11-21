@@ -1,0 +1,20 @@
+# Build + test artifacts
+contracts/out/
+contracts/cache/
+contracts/lib/forge-std/out/
+contracts/lib/forge-std/cache/
+
+# Crew run logs (keep the markdown outputs, ignore raw logs)
+*.log
+*.tmp
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Node (only used by the optional MCP shell server during development)
+node_modules/
+
+# Never ignore .kiro — the Kiroween rules require it at the repo root.
+# (Explicitly listed here as a reminder: do NOT add .kiro to this file.)
