@@ -22,10 +22,13 @@ and extract value or strand someone else's value — demonstrated by an
    Record the kill with one line of evidence and move on.
 
 ## Severity rubric
-- **Critical:** direct theft / drain of user funds, unprivileged, no
-  preconditions beyond normal use. Example: reentrancy draining a vault.
-- **High:** theft / drain with a cheap precondition (e.g. a price the
-  attacker can move), or permanent loss of funds.
+- **Critical:** direct theft / drain of user funds by an unprivileged
+  actor, with at most a trivial public call as precondition (no capital,
+  timing, or multi-step setup beyond normal use). Example: reentrancy
+  draining a vault; an unrestricted price setter that lets anyone mint
+  shares for 1 wei and redeem them for full value.
+- **High:** theft / drain that needs capital, timing, a flash loan, or a
+  multi-step setup — or permanent loss of funds under narrow conditions.
 - **Medium:** funds at risk under narrow conditions, or griefing that
   strands value.
 - **Low / Info:** everything else. Never inflate severity to make a
